@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinchan vs Nevado</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <audio id="background-music" loop autoplay>
+    <source src="assets/shinchan_sound.mp3" type="audio/mpeg">
+  </audio>
+  <body>
+
+   <!--Pantalla fija-->
+    <div class="screen">
+      <section class="top-navegation">
+        <h2>Tic Tac Toc</h2>
+        <div classs="top-icons">
+          <img src="assets/minimizar-icon.png" alt="Icon1">
+          <img src="assets/close-icon.png" alt="Icon2">
+        </div>
+      </section>
+
+      <div class="pantalla-fondo">
+
+          <!--Pantalla de Inicio-->
+        <div id= "start-screen" class="contenedor-inicio">
+          <section class="titulo-juego">
+            <h1>Shinchan vs Nevado</h1>
+            <p> La Batalla Final </p>
+          </section>
+          <img src="assets/img_inicio.gif" alt="Img1" id="mi-gif" class="mi-gif">
+          <button id="btn-start" class="btn-start" >Empezar</button>
+        </div>
+
+        <!--Pantalla de juego (ocultar al principio)-->
+        <div id="game-screen" class="contenedor-juego" style="display: none">
+          <section class="titulo-juego">
+            <h1>Shinchan vs Nevado</h1>
+            <p> La Batalla Final </p>
+          </section>
+          
+          <section id="board" class="template-board">
+            <button class="btn-square" onclick="handleClick(0)" ></button>
+            <button class="btn-square" onclick="handleClick(1)" ></button>
+            <button class="btn-square" onclick="handleClick(2)" ></button>
+
+            <button class="btn-square" onclick="handleClick(3)" ></button>
+            <button class="btn-square" onclick="handleClick(4)" ></button>
+            <button class="btn-square" onclick="handleClick(5)" ></button>
+
+            <button class="btn-square" onclick="handleClick(6)" ></button>
+            <button class="btn-square" onclick="handleClick(7)" ></button>
+            <button class="btn-square" onclick="handleClick(8)" ></button>
+          </section>
+
+          
+
+        </div>
+        <!--Pantalla de VICTORIA-->
+        <div id="win-screen" class="win-screen" style="display: none">
+          <h3>¡Eres el campeón de Kasukabe!</h3>
+          <img src="assets/img_win.gif" alt="Img1" id="mi-gif" class="mi-gif">
+          <button id="btn-reset-win" class="btn-reset-win">¡Otra vez!</button>
+        </div>
+
+        <!--Pantalla de DERROTA-->
+        <div id="lose-screen" class="lose-screen" style="display: none">
+          <h3>¡Nevado es demasiado fuerte!</h3>
+          <img src="assets/img_lose.gif" alt="Img1" id="mi-gif" class="mi-gif">
+          <button id="btn-reset-lose" class="btn-reset-lose">¡Otra vez!</button>
+        </div>
+
+      </div>
+       
+
+    </div>  
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
