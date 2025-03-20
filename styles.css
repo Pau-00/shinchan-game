@@ -95,7 +95,7 @@ body{
 
   .contenedor-inicio h1 {
     margin: 0; /* Elimina los márgenes predeterminados */
-    font-size: 24px;
+    font-size: 22px;
     color: #411D0D;
     line-height: 24px;
   }
@@ -132,7 +132,7 @@ body{
 }
   .contenedor-juego h1 {
     margin: 0; /* Elimina los márgenes predeterminados */
-    font-size: 28px;
+    font-size: 24px;
     color: #411D0D;
     line-height: 24px;
   }
